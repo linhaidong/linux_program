@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+addr	getaddr.c	/^    u32 addr;$/;"	m	struct:nl_if_info	file:
+index_oif	getaddr.c	/^static int index_oif = 0;$/;"	v	file:
+main	getaddr.c	/^int main()$/;"	f
+name	getaddr.c	/^    char *name;$/;"	m	struct:nl_if_info	file:
+name	getaddr.c	/^    char *name;$/;"	m	struct:nlsock	file:
+nl_cmd	getaddr.c	/^} nl_cmd = { -1, 0, {0}, "netlink-cmd" };$/;"	v	typeref:struct:nlsock
+nl_get_if_addr	getaddr.c	/^static int nl_get_if_addr(struct sockaddr_nl *snl, struct nlmsghdr *h, void *arg )$/;"	f	file:
+nl_get_oif	getaddr.c	/^static int nl_get_oif ( struct sockaddr_nl *snl, struct nlmsghdr *h, void *arg )$/;"	f	file:
+nl_if_info	getaddr.c	/^struct nl_if_info {$/;"	s	file:
+nl_parse_info	getaddr.c	/^nl_parse_info ( int ( *filter ) ( struct sockaddr_nl *, struct nlmsghdr *, void * ),$/;"	f	file:
+nl_parse_rtattr	getaddr.c	/^static void nl_parse_rtattr ( struct rtattr **tb, int max, struct rtattr *rta, int len )$/;"	f	file:
+nl_request	getaddr.c	/^static int nl_request(int family, int type, struct nlsock *nl)$/;"	f	file:
+nl_socket	getaddr.c	/^static int nl_socket(struct nlsock *nl, unsigned long groups)$/;"	f	file:
+nlsock	getaddr.c	/^struct nlsock {$/;"	s	file:
+rt_addr_n2a	getaddr.c	/^const char *rt_addr_n2a(int af, int len, const void *addr, char *buf, int buflen)$/;"	f
+seq	getaddr.c	/^    int seq;$/;"	m	struct:nlsock	file:
+snl	getaddr.c	/^    struct sockaddr_nl snl;$/;"	m	struct:nlsock	typeref:struct:nlsock::sockaddr_nl	file:
+sock	getaddr.c	/^    int sock;$/;"	m	struct:nlsock	file:
+u16	getaddr.c	/^typedef uint16_t u16;$/;"	t	file:
+u32	getaddr.c	/^typedef uint32_t u32;$/;"	t	file:

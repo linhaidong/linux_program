@@ -1,0 +1,9 @@
+http.py  
+index.html
+
+/*************************************************/
+[file]
+HTTPServerDemo.py  
+[test]
+浏览器中输入
+http://127.0.0.1:8000/?name=123&pid=1234

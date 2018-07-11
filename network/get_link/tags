@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CFLAGS	Makefile	/^CFLAGS = -g -O0 -Wall$/;"	m
+MATRIX_NL_H	nl.h	8;"	d
+NLA_DATA	nl.h	22;"	d
+NLA_NEXT_ATTR	nl.h	23;"	d
+NLMSG_ERROR	nl.c	295;"	d	file:
+NLMSG_GOOD_SIZE	nl.h	19;"	d
+NLMSG_TAIL	nl.c	22;"	d	file:
+NLMSG_TAIL	nl.h	20;"	d
+OBJS	Makefile	/^OBJS = $(patsubst %.c, %.o, $(SOURCE))$/;"	m
+PAGE_SIZE	nl.h	17;"	d
+SOURCE	Makefile	/^SOURCE = $(wildcard *.c)$/;"	m
+TARGER	Makefile	/^TARGER = get_interface$/;"	m
+cap	nl.h	/^	ssize_t cap;$/;"	m	struct:nlmsg
+fd	nl.h	/^	int fd;$/;"	m	struct:nl_handler
+local	nl.h	/^	struct sockaddr_nl local;$/;"	m	struct:nl_handler	typeref:struct:nl_handler::sockaddr_nl
+main	main.c	/^int main()$/;"	f
+netlink_close	nl.c	/^extern int netlink_close(struct nl_handler *handler)$/;"	f
+netlink_open	nl.c	/^extern int netlink_open(struct nl_handler *handler, int protocol)$/;"	f
+netlink_rcv	nl.c	/^extern int netlink_rcv(struct nl_handler *handler, char * buf, int len)$/;"	f
+netlink_send	nl.c	/^extern int netlink_send(struct nl_handler *handler, struct nlmsg *nlmsg)$/;"	f
+netlink_transaction_getinfo	nl.c	/^extern int netlink_transaction_getinfo(struct nl_handler *handler,struct nlmsg *request, struct nlmsg *answer)$/;"	f
+nl_get_link	nl.c	/^static int nl_get_link(struct nlmsghdr *h, void ** argv)$/;"	f	file:
+nl_handler	nl.h	/^struct nl_handler {$/;"	s
+nl_parse_info	nl.c	/^nl_parse_info (int sock)$/;"	f	file:
+nl_request	nl.c	/^static int nl_request ( int family, int type, int sock )$/;"	f	file:
+nla_begin_nested	nl.c	/^struct rtattr *nla_begin_nested(struct nlmsg *nlmsg, int attr)$/;"	f
+nla_end_nested	nl.c	/^void nla_end_nested(struct nlmsg *nlmsg, struct rtattr *attr)$/;"	f
+nla_put	nl.c	/^static int nla_put(struct nlmsg *nlmsg, int attr,$/;"	f	file:
+nla_put_attr	nl.c	/^extern int nla_put_attr(struct nlmsg *nlmsg, int attr)$/;"	f
+nla_put_buffer	nl.c	/^extern int nla_put_buffer(struct nlmsg *nlmsg, int attr,$/;"	f
+nla_put_string	nl.c	/^extern int nla_put_string(struct nlmsg *nlmsg, int attr, const char *string)$/;"	f
+nla_put_u16	nl.c	/^extern int nla_put_u16(struct nlmsg *nlmsg, int attr, unsigned short value)$/;"	f
+nla_put_u32	nl.c	/^extern int nla_put_u32(struct nlmsg *nlmsg, int attr, int value)$/;"	f
+nlmsg	nl.h	/^struct nlmsg {$/;"	s
+nlmsg_alloc	nl.c	/^extern struct nlmsg *nlmsg_alloc(size_t size)$/;"	f
+nlmsg_alloc_reserve	nl.c	/^extern struct nlmsg *nlmsg_alloc_reserve(size_t size)$/;"	f
+nlmsg_data	nl.c	/^extern void *nlmsg_data(struct nlmsg *nlmsg)$/;"	f
+nlmsg_free	nl.c	/^extern void nlmsg_free(struct nlmsg *nlmsg)$/;"	f
+nlmsg_len	nl.c	/^extern size_t nlmsg_len(const struct nlmsg *nlmsg)$/;"	f
+nlmsg_reserve	nl.c	/^extern void *nlmsg_reserve(struct nlmsg *nlmsg, size_t len)$/;"	f
+nlmsghdr	nl.h	/^	struct nlmsghdr *nlmsghdr;$/;"	m	struct:nlmsg	typeref:struct:nlmsg::nlmsghdr
+peer	nl.h	/^	struct sockaddr_nl peer;$/;"	m	struct:nl_handler	typeref:struct:nl_handler::sockaddr_nl
+seq	nl.h	/^	int seq;$/;"	m	struct:nl_handler
